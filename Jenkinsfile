@@ -1,6 +1,6 @@
 node {
     stage ("Checkout VulabMicroservice"){
-        git branch: 'main', url: ' https://github.com/foxwas/vulab-microservice-maven.git'
+        git branch: 'main', url: ' https://github.com/foxwas/vulab-microservice-gradle.git'
     }
     
     stage ("Maven Build - VulabMicroservice") {
