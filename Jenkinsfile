@@ -5,16 +5,16 @@ node {
     
     stage ("Maven Build - VulabMicroservice") {
 	
-        sh 'gradle clean build'
+        'gradle clean build'
 
     }
     
     stage ("Package - VulabMicroservice") {
-        sh  'gradle bootjar'
+        'gradle bootjar'
     }
     
     stage ("API Tests- VulabMicroservice") {
-        sh  'gradle test'
+        'gradle test'
     }
     
     stage('User Acceptance Test - VulabMicroservice') {
@@ -26,7 +26,7 @@ node {
 	  if(response=="Yes") {
 
 	    stage('Release- VulabMicroservice') {
-	     sh 'echo VulabMicroservice is ready to release!'
+	     'echo VulabMicroservice is ready to release!'
 
 	    }
 	  }
